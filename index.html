@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Swipe News</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      .active-button {
+        @apply bg-blue-500 text-white;
+      }
+      @media (max-width: 600px) {
+        .navText {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <div class="relative w-full">
+      <img src="./assets/bg.png" alt="Bg image" class="w-full h-auto" />
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-10"
+      >
+        <h1
+          class="text-white font-semibold lg:text-8xl md:text-8xl sm:text-6xl"
+          style="font-family: 'Suez One, serif'"
+        >
+          SwipeNews
+        </h1>
+        <p class="text-lg text-white">Stay Updated, Anywhere! Anytime!</p>
+      </div>
+    </div>
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-transparent"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="navText text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+            href=""
+            >Swipe News</a
+          >
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-gray-800 lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <!-- Left side swipe news text could go here if needed -->
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:bg-gray-700 lg:rounded lg:py-2 text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="./index.html"
+              >
+                <span class="inline-block ml-0">Home</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="./privacy.html"
+              >
+                <span class="inline-block ml-0">Privacy Policy</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="./tnc.html"
+              >
+                <span class="inline-block ml-0">Terms of Use</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="relative py-20">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80.5px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="mx-5 my-5 text-center mb-12">
+          <h2 class="text-2xl font-semibold text-black">
+            News in short format, reliable and accurate...
+          </h2>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img
+                alt="..."
+                class="max-w-full rounded-lg"
+                src="./assets/Picture9.png"
+              />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <h3 class="text-3xl font-semibold">Never miss an Update</h3>
+                <p
+                  class="mt-4 text-lg leading-relaxed text-gray-600 text-justify"
+                >
+                  Stay ahead of the curve with SwipeNews, your ultimate
+                  AI-powered news companion designed exclusively for India.
+                  Whether you’re catching up on the latest headlines or diving
+                  deep into in-depth analysis, SwipeNews brings you the most
+                  relevant and personalized news experience right at your
+                  fingertips.
+                </p>
+                <h5 class="text-lg font-semibold mt-4 mb-4">Why SwipeNews?</h5>
+                <p class="text-justify">
+                  <span class="font-semibold">
+                    <span
+                      class="text-xs font-semibold inline-block py-2 px-2 uppercase rounded-full text-pink-600 bg-pink-200"
+                      ><i class="fa fa-newspaper text-sx w-auto h-auto"></i>
+                    </span>
+                    Real-Time Updates:</span
+                  >
+                  Get instant notifications on breaking news and trending topics
+                  from across India and the world.
+                </p>
+
+                <p class="text-justify">
+                  <span class="font-semibold">
+                    <span
+                      class="text-xs font-semibold inline-block py-2 px-2 uppercase rounded-full text-pink-600 bg-pink-200"
+                      ><i class="fa fa-globe text-sx w-auto h-auto"></i>
+                    </span>
+                    Local and Global Coverage:
+                  </span>
+                  From local events to global affairs, SwipeNews covers it all,
+                  with a special focus on Indian perspectives.
+                </p>
+                <p class="text-justify">
+                  <span class="font-semibold">
+                    <span
+                      class="text-xs font-semibold inline-block py-2 px-2 uppercase rounded-full text-pink-600 bg-pink-200"
+                      ><i class="fa fa-seedling text-sx w-auto h-auto"></i>
+                    </span>
+                    User-Friendly Interface:
+                  </span>
+                  Enjoy a seamless and intuitive browsing experience with our
+                  minimalist design, making news reading a pleasure.
+                </p>
+                <p class="text-justify">
+                  <span class="font-semibold">
+                    <span
+                      class="text-xs font-semibold inline-block py-2 px-2 uppercase rounded-full text-pink-600 bg-pink-200"
+                      ><i class="fa fa-language text-sx w-auto h-auto"></i>
+                    </span>
+                    Multilingual Support:
+                  </span>
+                  Access news in multiple Indian languages, catering to the
+                  diverse linguistic landscape of our country.
+                </p>
+
+                <p class="font-bold mt-4 text-justify">
+                  Join the SwipeNews community today and transform the way you
+                  stay informed. Swipe, read, and stay updated with SwipeNews –
+                  your news, your way.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-gray-900 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80.5px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4 text-gray-300">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-400">
+              Find us on any of these platforms, we respond in 1-2 business
+              days.
+            </h5>
+            <div class="mt-6"></div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-6/12 px-4">
+                <span
+                  class="block uppercase text-gray-400 text-sm font-semibold mb-2"
+                  >Contact Us</span
+                >
+                <ul class="list-unstyled cursor-pointer">
+                  <li
+                    class="text-gray-500 hover:text-gray-400 font-semibold block pb-2 text-sm"
+                  >
+                    Email : Denish.Panchani@theheliux.com
+                  </li>
+                  <li
+                    class="text-gray-500 hover:text-gray-400 font-semibold block pb-2 text-sm"
+                  >
+                    Address : Yashplaza, Varachha Road, Surat-395006
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-400 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-500 hover:text-gray-400 font-semibold block pb-2 text-sm"
+                      href="./tnc.html"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-500 hover:text-gray-400 font-semibold block pb-2 text-sm"
+                      href="./privacy.html"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-300 font-semibold py-1">
+              Copyright © <span id="current-year"></span>
+              <a href="" class="text-gray-500 hover:text-gray-400"
+                >Heliux Corporation Pvt. Ltd.</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
